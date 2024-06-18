@@ -21,21 +21,35 @@
 
 body {
     height: 100vh;
+    margin: 0;
 }
 
 .container {
     display: flex;
     height: 100%;
     align-items: center;
+    margin: 0;
 }
 
 .background {
-    width: 50vw;
+    background-image: url(pexels-apasaric-2603464.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+}
+
+.form {
+    width: 50%;
 }
 
 img {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -43,10 +57,11 @@ fieldset {
     appearance: none;
     display: flex;
     flex-wrap: wrap;
-    width: 60vw;
-    gap: 15px;
+    width: 50vw;
+    gap: 25px;
     max-width: 600px;
     justify-content: center;
+    border: none;
 }
 
 legend {
@@ -57,6 +72,9 @@ legend {
 
 label {
     display: flex;
+    font-family: "label";
+    font-size: small;
+    margin-bottom: 5px;;
 }
 
 form {
@@ -64,27 +82,43 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
 }
 
 p {
     font-family: paragraph;
     /* max-width: 400px; */
     padding: 2em;
-    border: 1px solid #000;
     margin: 0;
     text-align: center;
+    /* max-width: 600px; */
 }
 
-label {
-    font-family: "label";
-    font-size: small;
+input {
+    height: 2em;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .container {
         flex-direction: column;
     }
 }
 
+button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 2rem;
+    font-family: "label";
+    font-size: 0.9em;
+    text-wrap: nowrap;
+    min-width: fit-content;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    font-family: "paragraph";
+    font-size: normal;
+    color: black;
+}
