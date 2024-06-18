@@ -44,6 +44,9 @@ body {
 
 .form {
     width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: lightgrey;
 }
 
 img {
@@ -78,6 +81,7 @@ label {
 }
 
 form {
+    appearance: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,15 +90,18 @@ form {
 
 p {
     font-family: paragraph;
-    /* max-width: 400px; */
     padding: 2em;
     margin: 0;
     text-align: center;
-    /* max-width: 600px; */
 }
 
 input {
+    appearance: none;
     height: 2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
 }
 
 
@@ -113,6 +120,12 @@ button {
     font-size: 0.9em;
     text-wrap: nowrap;
     min-width: fit-content;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: springgreen;
 }
 
 footer {
@@ -121,4 +134,37 @@ footer {
     font-family: "paragraph";
     font-size: normal;
     color: black;
+    padding: 15px;
+}
+
+footer > a {
+    color: white;
+}
+
+.footer:visited {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+input:focus:valid {
+    border: 1px solid springgreen;
+}
+
+input:focus:invalid {
+    border: 1px solid red;
+}
+
+
+#lname:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+
+p > a {
+    text-decoration: none;
 }

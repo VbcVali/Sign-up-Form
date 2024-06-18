@@ -14,7 +14,7 @@
     <div class="container">
         <div class="background">
             <!-- Logo -->
-             <footer><a href="https://www.pexels.com/es-es/foto/foto-de-edificios-durante-la-noche-2603464/">Foto de Aleksandar Pasaric</a></footer>
+             <footer><a class="footer" href="https://www.pexels.com/es-es/foto/foto-de-edificios-durante-la-noche-2603464/">Foto de Aleksandar Pasaric</a></footer>
         </div>
         <div class="form">
             <form action="tester">
@@ -26,7 +26,7 @@
                     <legend>Let's do this!</legend>
                     <div class="input fname">
                         <label for="fname">FIRST NAME *</label>
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="fname" id="fname" required>
                     </div>
                     <div class="input lname">
                         <label for="lname">LAST NAME</label>
@@ -34,19 +34,19 @@
                     </div>
                     <div class="input mail">
                         <label for="mail">EMAIL *</label>
-                        <input type="email" name="mail" id="mail">
+                        <input type="email" name="mail" id="mail" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
                     </div>
                     <div class="input number">
                         <label for="number">PHONE NUMBER *</label>
-                        <input type="tel" name="number" id="number">
+                        <input type="tel" name="number" id="number" required>
                     </div>
                     <div class="input password">
                         <label for="password">PASSWORD *</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div class="input cpassword">
                         <label for="cpassword">CONFIRM PASSWORD *</label>
-                        <input type="password" name="cpassword" id="cpassword">
+                        <input type="password" name="cpassword" id="cpassword" required>
                     </div>
                 </fieldset>
                 <button type="submit" class="caccount">Create Account</button>
