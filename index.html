@@ -14,6 +14,7 @@
     <div class="container">
         <div class="background">
             <!-- Logo -->
+             <div class="vbcvali">VBCVALI</div>
              <footer><a class="footer" href="https://www.pexels.com/es-es/foto/foto-de-edificios-durante-la-noche-2603464/">Foto de Aleksandar Pasaric</a></footer>
         </div>
         <div class="form">
@@ -34,7 +35,7 @@
                     </div>
                     <div class="input mail">
                         <label for="mail">EMAIL *</label>
-                        <input type="email" name="mail" id="mail" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+                        <input type="email" name="mail" id="mail" required>
                     </div>
                     <div class="input number">
                         <label for="number">PHONE NUMBER *</label>
@@ -42,11 +43,11 @@
                     </div>
                     <div class="input password">
                         <label for="password">PASSWORD *</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" required minlength="8" maxlength="16">
                     </div>
                     <div class="input cpassword">
                         <label for="cpassword">CONFIRM PASSWORD *</label>
-                        <input type="password" name="cpassword" id="cpassword" required>
+                        <input type="password" name="cpassword" id="cpassword" required minlength="8" maxlength="16">
                     </div>
                 </fieldset>
                 <button type="submit" class="caccount">Create Account</button>

@@ -29,7 +29,11 @@ body {
     height: 100%;
     align-items: center;
     margin: 0;
+}input:focus {
+    outline: none;
+    border: 1px solid blue;
 }
+
 
 .background {
     background-image: url(pexels-apasaric-2603464.jpg);
@@ -167,4 +171,13 @@ input:focus:invalid {
 
 p > a {
     text-decoration: none;
+}
+
+.vbcvali {
+    font-family: label;
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    margin-top: 50%;
 }
